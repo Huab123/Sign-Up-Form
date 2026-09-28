@@ -20,9 +20,9 @@
                 <p> You know you want to.</p>
             </div>
             <div class="sign-up">
-                <p class="title"> Let's do this! </p>
                 <form>
                     <div class="inputs">
+                        <p class="title"> Let's do this! </p>
                         <div class="input">
                             <label for="firstName"> First Name </label>
                             <input type="text" id="firstName" name="firstName" required>
@@ -33,19 +33,21 @@
                         </div>
                         <div class="input">
                             <label for="email"> Email </label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required placeholder="XXXX@gmail.com" pattern="/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/">
                         </div>
                         <div class="input">
                             <label for="phone"> Phone Number </label>
-                            <input type="tel" id="phone" name="phone" required>
+                            <input type="tel" id="phone" name="phone" required placeholder="(111)111-1111">
                         </div>
                         <div class="input">
                             <label for="password"> Password </label>
-                            <input type="password" id="password" name="password" required>
+                            <input type="password" id="password" name="password" required pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*\(\)\[\]\{\}\-_+=~`\|:;&quot;'<>,.\/?]).{8,}"
+                                title="At least 8 characters with a lowercase letter, an uppercase letter, a number, and a special character">
                         </div>
                         <div class="input">
                             <label for="confirmPassword"> Confirm  Password </label>
-                            <input type="password" id="password" name="confirmPassword" required>
+                            <input type="password" id="password" name="confirmPassword" required pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*\(\)\[\]\{\}\-_+=~`\|:;&quot;'<>,.\/?]).{8,}"
+                                title="At least 8 characters with a lowercase letter, an uppercase letter, a number, and a special character">
                         </div>
                     </div>
 

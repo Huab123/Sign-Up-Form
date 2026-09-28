@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -14,6 +14,7 @@
 /* Sidebar */
 .sidebar {
     background-image: url("images/background.avif");
+    /* Figure out whether to stretch or repeat or whatever for the sidebar image */
     height: 1161px;
     flex: 0 0 774px;
 }
@@ -71,6 +72,7 @@
 .sign-up .title {
     padding: 20px 50px;
     font-size: 28px;
+    width: 100%;
 }
 
 .inputs {
@@ -91,14 +93,37 @@
 
 .input input {
     border-radius: 5px;
-    height: 30px;
-    border-color: lightgray;
-    border: 1px solid lightgray;
+    height: 40px;
+    border: 1px solid #E5E7EB;
 
     font-size: 24px;
 } 
 
+/* User Validation */
+.input :user-invalid {
+    border-color: red;
+}
+
+.input :focus {
+    border-color: rgb(50, 170, 200);
+}
+
+.input :user-valid {
+    border-color: lightgreen;
+}
+
 .submit {
-    padding: 20px 50px 20px 50px;
+    padding: 50px 50px 20px 50px;
     height: 30vh;
+}
+
+.submit button {
+    color: white;
+    background-color: #596D48;
+    font-size: 30px;
+    font-weight: bold;
+    
+    width: 300px;
+    height: 70px;
+    border-radius: 8px;
 }
